@@ -55,8 +55,8 @@ body{
 
 /* twoLitreGlass conatiner */
 .twoLitreGlass{
-  width: 10rem;
-  height: 22rem;
+  width: 9.5rem;
+  height: 20rem;
   background-color: white;
   display: flex;
   flex-direction: column;
