@@ -1,16 +1,18 @@
+// elements
 const smallGlass = document.querySelectorAll('.smallGlass');
 const waterBottleElement = document.querySelector('.remaining-water-ltr');
 const smallWaterBottleElement = document.querySelector('.water-filling');
 
-// console.log(smallGlass); 
-// console.log(smallWaterBottleElement)
+
 // gv
 let height = 0;
 
+// functions starts here!!!
 const updateHeight = function(){
   smallWaterBottleElement.style.height = `${height}rem`;
   waterBottleElement.style.height = `${(20 - height)}rem`;
 }
+
 const addWater = function(smallGlass){
   if(!(smallGlass.classList.contains('waterFilled'))){
     smallGlass.classList.add('waterFilled');
@@ -35,6 +37,7 @@ const removeWater = function(smallGlass){
   smallGlass.addEventListener('click',()=>{addWater(smallGlass)});
 }
 
+// event listeners
 for(let i=0;i<smallGlass.length;i++){
   smallGlass[i].addEventListener('click',()=>{addWater(smallGlass[i])})
 }
