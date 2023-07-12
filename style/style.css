@@ -114,11 +114,16 @@ body{
 }
 
 .water-filling{
+  color: var(--clr-whitish-blue);
   width: 100%;
   background-color: var(--clr-water);
   border: 0px solid var(--clr-border);
   border-bottom-left-radius: 2.25rem;
   border-bottom-right-radius: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .remaining-water-ltr{

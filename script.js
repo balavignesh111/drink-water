@@ -9,7 +9,10 @@ let height = 0;
 
 // functions starts here!!!
 const updateHeight = function(){
+  let smallWaterFilledLength = document.querySelectorAll('.smallGlass.waterFilled').length;
+  let percentage = ((smallWaterFilledLength / 8) * 100);
   smallWaterBottleElement.style.height = `${height}rem`;
+  (smallWaterFilledLength > 0 ) ?smallWaterBottleElement.innerHTML = `<h3>${percentage}%</h3>` : smallWaterBottleElement.innerHTML = '';
   waterBottleElement.style.height = `${(20 - height)}rem`;
 }
 
